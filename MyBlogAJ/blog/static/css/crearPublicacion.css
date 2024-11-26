@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #000000;
+    font-size: 16px;
+}
+
+
+/* titulo */
+.titulo {
+    text-align: center;
+    color: #1e4671;
+    margin-top: 30px;
+}
+
+/* formulario */
+.contenedorForm {
+    border: 1px solid #ccc;
+    width: 425px;
+    margin: 56px auto 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 50px;
+    box-shadow: 5px 0 25px -3px #000000;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Input  texarea, select y button renderizados  */
+input,
+textarea,
+select,
+button {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* boton publicar */
+
+.contenedorBoton {
+    margin: 0 auto;
+    width: 120px;
+}
+
+.btnPublicar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.btnPublicar:hover {
+    background-color: #0056b3;
+}
+
+
+/* link volver a publicaciones */
+.contenedorLink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnVolver {
+    color: #1e4671;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.btnVolver::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-out;
+}
+
+.btnVolver:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones Blog A&J</title>
+    <link rel="stylesheet" href="{% static 'css/publicaciones.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo">Publicaciones del Blog A&J</h1>
+        <a href="{% url 'crearPublicacionurl' %}" class="btnNuevaPublicacion"> + Nueva Publicación 🖉</a>
+    </header>
+    <main class="contenedor">
+        {% if publicaciones %}
+        <div class="contenedorPublicaciones">
+            {% for publicacion in publicaciones %}
+            <div class="cartaPublicacion">
+                <h2 class="tituloPublicacion">
+                    <a href="{% url 'detallePublicacionurl' publicacion.id %}">{{ publicacion.titulo }}</a>
+                </h2>
+                <p class="contenidoPublicacion">
+                    {{ publicacion.contenido|truncatechars:100 }}
+                </p>
+                <div class="contenedorfecha">
+                    <small class="fechaPublicacion">Publicado el: {{ publicacion.fecha_publicacion }}</small>
+                    <a href="{% url 'detallePublicacionurl' publicacion.id %}" class="btnLeerMas">Leer más</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="sinPublicaciones">Aun no hay publicaciones! haz click en NUEVA PUBLICACION para crear una</p>
+        {% endif %}
+
+    </main>
+</body>
+
+</html>
+
+
+<!-- #Juan amaya realizo esta parte la cual fue mejorada Para los estilos -->
+<!-- 
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones Blog</title>
+    <link rel="stylesheet" href="{% static 'css/publicaciones.css' %}">
+</head>
+
+<body>
+    <h1>Publicaciones</h1>
+    <a href="{% url 'crearPublicacionurl' %}">Quiero hacer una nueva publicacion</a>
+    <ul>
+        {% for publicacion in publicaciones %}
+        <li>
+            <a href="{% url 'detallePublicacionurl' publicacion.id %}">TITULO: {{ publicacion.titulo }}</a>
+            <p>CONTENIDO: {{ publicacion.contenido}}</p>
+            <small>{{ publicacion.fecha_publicacion }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html> -->

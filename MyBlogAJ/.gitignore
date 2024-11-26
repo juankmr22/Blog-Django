@@ -1,0 +1,38 @@
+# Entorno virtual
+env/
+venv/
+
+# Archivos generados por Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Archivos de configuración local
+*.env
+*.local
+
+# Archivos de logs
+*.log
+
+# Archivos temporales del sistema operativo
+.DS_Store   
+Thumbs.db
+
+# Archivos generados por el editor de código
+.vscode/
+.idea/
+*.swp
+
+# Archivos de bases de datos locales
+db.sqlite3
+
+# Archivos de compilación estáticos
+staticfiles/
+media/
+
+# Dependencias instaladas
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/

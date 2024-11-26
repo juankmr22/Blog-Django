@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Publicacion</title>
+    <link rel="stylesheet" href="{% static 'css/crearPublicacion.css' %}">
+</head>
+
+<body>
+    <h1 class="titulo">Crear Nueva Publicacion</h1>
+    <div class="contenedorForm">
+        <form method="post" class="formulario">
+            {% csrf_token %}
+            {{ formulario.as_p }}
+            <div class="contenedorBoton">
+                <button class="btnPublicar" type="">Publicar</button>
+            </div>
+        </form>
+        <div class="contenedorLink">
+            <a href="{% url 'publicacionurl' %}" class="btnVolver"> ⬅ Volver a publicaciones</a>
+        </div>
+    </div>
+</body>
+
+</html>

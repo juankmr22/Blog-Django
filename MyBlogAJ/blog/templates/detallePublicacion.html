@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ detalle.titulo }}</title>
+    <link rel="stylesheet" href="{% static 'css/detallePublicacion.css' %}">
+</head>
+
+<body>
+    <main class="contenedorPublicacion">
+        <article class="publicacionDetalle">
+            <div class="cabecera">
+                <h1 class="titulo">{{ detalle.titulo }}</h1>
+                <p class="autor">Escrito por <strong>{{ detalle.autor }}</strong> el
+                    {{detalle.fecha_publicacion}}</p>
+            </div>
+            <section class="contenido">
+                <p>{{ detalle.contenido }}</p>
+            </section>
+            <div class="contenedorBtnVolver">
+                <a href="{% url 'publicacionurl' %}" class="btnVolver">← Volver a publicaciones</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
