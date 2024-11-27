@@ -25,8 +25,3 @@ def crearPublicacion(request):
         formulario = formularioPublicacion()
     return render(request, 'crearPublicacion.html', {'formulario': formulario}) 
 
-
-
-# def eliminar_publicacion(request, id):
-#     carta = get_object_or_404(Carta, id=id)
-#     return redirect("publicacionurl")

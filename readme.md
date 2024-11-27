@@ -1,9 +1,9 @@
 # Proyecto: Blog en Django
-
+<!-- Este readme fue creado por Juan amaya y Andres Urango -->
 ## Tabla de contenido
-* [Descripción del proyecto](#descripcion-del-proyecto) 
+* [Descripción del proyecto](#descripcion-del-proyecto)  
 * [Instalación](#instrucciones-para-instalar-y-ejecutar-el-proyecto)
-* [Error al instalar entorno virtual](#si-tienes-problemas-en-windows-con-la-ejecución-de-scripts-con-powershell-sigue-los-siguientes-pasos)
+* [Error al instalar entorno virtual](#si-encuentras-problemas-con-la-ejecucion-de-scripts-pssecurityexception-sigue-estos-pasos)
  
 
 ## Descripcion del Proyecto
@@ -36,12 +36,12 @@ Navega al directorio del proyecto:
 ```bash 
      env\Scripts\activate # En (Linux/Mac) usa `source env/bin/activate`
 ```
-4. **Si no presentas ningun problema realiza la instalcion de Django en tu entorno virtual**
+4. **Si no presentas ningun problema realiza la instalacion de Django en tu entorno virtual**
 ```bash 
      pip install django
 ```
 
-## Si encuentras problemas con la ejecución de scripts (PSSecurityException), sigue estos pasos:
+## Si encuentras problemas con la ejecucion de scripts (PSSecurityException), sigue estos pasos:
 
 De manera predeterminada, PowerShell bloquea la ejecución de scripts como medida de seguridad. Este es el error PSSecurityException que indica que no tienes permiso para ejecutar el script Activate.ps1 que intenta activar el entorno virtual de Python.
 
@@ -51,7 +51,7 @@ Para solucionarlo, puedes cambiar la política de ejecución de PowerShell tempo
 - Haz clic en el botón de inicio de Windows.
 - Busca "PowerShell".
 - Haz clic derecho en "Windows PowerShell" y selecciona "Ejecutar como administrador".
-2. **Cambia la política de ejecución:**
+2. **Cambia la política de ejecución**:
 Ejecuta este comando en la ventana de PowerShell:
 ```bash
     Set-ExecutionPolicy RemoteSigned
@@ -62,6 +62,7 @@ Ejecuta este comando en la ventana de PowerShell:
 Cuando se te pregunte si deseas cambiar la política de ejecución, escribe **Y**, u **O** y presiona Enter.
 
 4. **Reintentar activar el entorno virtual:**
+
 Vuelve a la terminal en tu proyecto de Django y ejecuta:
 ```bash 
      env\Scripts\activate # En (Linux/Mac) usa `source env/bin/activate`
@@ -71,21 +72,22 @@ Vuelve a la terminal en tu proyecto de Django y ejecuta:
 ```bash 
      pip install django
 ```
-Verifica que esta bien instalado
+6. **(Opcional) si quieres verificar que esta bien instalado**
 ```bash
     django-admin --version
 ```
-6. **Realiza las migraciones**
+7. **Realiza las migraciones**
 ```bash
     python manage.py migrate
 ```
-7. **Iniciar el servidor**
+8. **Iniciar el servidor**
 ```bash 
     python manage.py runserver
 ```
 Cuando ejecutes este comando, deberías ver una salida similar a esta en la terminal:
 Starting development server at http://127.0.0.1:8000/
-8. **(Opcional) si quieres crearte un super usuario realiza el siguiente comando**
+
+9. **(Opcional) si quieres crearte un super usuario realiza el siguiente comando**
 ```bash 
     python manage.py createsuperuser
 ```

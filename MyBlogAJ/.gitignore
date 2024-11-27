@@ -1,3 +1,5 @@
+#Andres Urango creo este gitignore
+
 # Entorno virtual
 env/
 venv/
@@ -8,17 +10,6 @@ venv/
 *.pyd
 __pycache__/
 
-# Archivos de configuración local
-*.env
-*.local
-
-# Archivos de logs
-*.log
-
-# Archivos temporales del sistema operativo
-.DS_Store   
-Thumbs.db
-
 # Archivos generados por el editor de código
 .vscode/
 .idea/
@@ -27,12 +18,3 @@ Thumbs.db
 # Archivos de bases de datos locales
 db.sqlite3
 
-# Archivos de compilación estáticos
-staticfiles/
-media/
-
-# Dependencias instaladas
-pip-wheel-metadata/
-*.egg-info/
-dist/
-build/
