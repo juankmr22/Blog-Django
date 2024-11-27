@@ -7,12 +7,12 @@
  
 
 ## Descripcion del Proyecto
-Este es un proyecto de un blog básico desarrollado con el framework **Django**, diseñado para poner en practica conocimientos sobre modelos, vistas, plantillas y formularios. El blog permite a los usuarios ver, crear y visualizar publicaciones de manera sencilla.
+Este es un proyecto de un blog básico desarrollado con el framework **Django**, con el objetivo de poner en practica conocimientos sobre modelos, vistas, plantillas y formularios. El blog permite a los usuarios consultar todas las punlicaciones, crear, visualizar e interactuar con publicaciones de manera sencilla.
 
 ### Funcionalidades:
 - **Pagina de inicio**: Muestra una lista con todas las publicaciones, incluyendo el título, el contenido y la fecha de publicación.
-- **Vista detallada**: Muestra el contenido completo de una publicación al hacer clic en el titulo o en el boton "Leer Más".  
-- **Formulario de creacion**: Permite crear nuevas publicaciones facilmente desde la web.
+- **Vista detallada**: Muestra el contenido completo de una publicación al hacer clic en el título o en el botón "Leer Más".  
+- **Formulario de creacion**: Permite crear nuevas publicaciones fácilmente desde la web.
 - **Navegación**: Enlaces intuitivos para navegar entre las secciones principales del blog.  
 
 ## Instrucciones para Instalar y Ejecutar el Proyecto
