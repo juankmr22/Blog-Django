@@ -19,12 +19,12 @@ Este es un proyecto de un blog básico desarrollado con el framework **Django**,
 
 1. **Clonar el repositorio**:
 ```bash
-git clone https://github.com/AndresUrango10/Blog_AJ_Django.git
+git clone https://github.com/juankmr22/Blog-Django.git
 ```
 
 Navega al directorio del proyecto:
 
- cd Blog_AJ_Django
+ cd Blog-Django
 
 
 ## Crea y activa un entorno virtual:
