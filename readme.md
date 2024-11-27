@@ -92,3 +92,5 @@ Starting development server at http://127.0.0.1:8000/ Acceda a el.
 ```bash 
     python manage.py createsuperuser
 ```
+## Nota:
+- Asegúrese de tener Python 3.8+ instalado en su sistema.
