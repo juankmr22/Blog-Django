@@ -26,7 +26,7 @@ Navega al directorio del proyecto:
 
  cd MyBlogAJ
 
-## Crea y activa un entorno virtual para instalar las dependencias del proyecto:
+## Crea y activa un entorno virtual:
 
 2. **Crear un entorno virtual en Windows**
 ```bash
@@ -85,7 +85,7 @@ Vuelve a la terminal en tu proyecto de Django y ejecuta:
     python manage.py runserver
 ```
 Cuando ejecutes este comando, deberías ver una salida similar a esta en la terminal:
-Starting development server at http://127.0.0.1:8000/
+Starting development server at http://127.0.0.1:8000/ Acceda a el.
 
 9. **(Opcional) si quieres crearte un super usuario realiza el siguiente comando**
 ```bash 
