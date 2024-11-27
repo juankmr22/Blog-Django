@@ -24,7 +24,8 @@ git clone https://github.com/AndresUrango10/Blog_con_Django.git
 
 Navega al directorio del proyecto:
 
- cd cd Blog_con_Django
+ cd Blog_AJ_Django
+
 
 ## Crea y activa un entorno virtual:
 
